@@ -24,7 +24,7 @@ describe('Teste End-to-End', () => {
 		// Seleciona o livro a ser comprado
 		cy.get('[data-id=3]').within(() => {
 			cy.get('.button-buy').click()
-			cy.wait(2000)
+			cy.wait(200)
 		})
 		cy.get('.swal-text').contains('Compra realizada com sucesso')
 		// Fecha o pop-up
